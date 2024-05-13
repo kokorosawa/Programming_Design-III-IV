@@ -65,9 +65,10 @@ int main()
             }
             for (int i = 0; i < list_size; i++)
             {
-                printf("%d ", list[i]);
+                printf("%d", list[i]);
+                printf(i == list_size - 1 ? "" : " ");
             }
-            printf("\b\n");
+            printf("\n");
         }
         else if (op == DELETION)
         {
@@ -85,9 +86,10 @@ int main()
             }
             for (int i = 0; i < list_size; i++)
             {
-                printf("%d ", list[i]);
+                printf("%d", list[i]);
+                printf(i == list_size - 1 ? "" : " ");
             }
-            printf("\b\n");
+            printf("\n");
         }
         else if (op == SEARCHING)
         {
@@ -100,7 +102,7 @@ int main()
                     break;
                 }
             }
-            flag == 1 ? printf("Yes \n") : printf("No \n");
+            flag == 1 ? printf("Yes\n") : printf("No\n");
         }
     }
 }
